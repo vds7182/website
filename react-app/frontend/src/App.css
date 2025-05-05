@@ -1,0 +1,72 @@
+/* Убираем отступы сверху */
+/* Сбрасываем стандартные отступы и padding для всех элементов */
+html, body {
+  height: 100%; /* Убедитесь, что тело сайта занимает весь экран */
+  margin: 0;
+  padding: 0;
+  background-color: #282c34; /* Черный фон для всего сайта */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App-header {
+  background-color: #282c34;
+  padding: 5px 20px; /* Ще менші відступи */
+  min-height: 60px; /* Мінімальна висота, а не фіксована */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+/* Сбрасываем margin и padding для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем лишний белый фон и убираем рамки вокруг body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34; /* Черный фон */
+   /* Белый цвет текста */
+}
+
+nav {
+  margin-top: 0;
+  padding: 0;
+}
+
+nav ul {
+  list-style-type: none; /* Убираем маркеры */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Используем flexbox для выравнивания в одну строку */
+}
+
+nav li {
+  margin-right: 20px; /* Промежуток между ссылками */
+}
+
+nav a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #000; /* Цвет ссылок */
+  font-size: 18px; /* Размер шрифта */
+}
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}

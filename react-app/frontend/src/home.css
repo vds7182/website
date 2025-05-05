@@ -1,0 +1,73 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #282c34; /* Чорний фон всюди */
+  color: white; /* Щоб текст був видно */
+}
+.App {
+    text-align: center;
+    background-color: #282c34;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  nav
+  {background: #eee8e8;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center; 
+      z-index: 1000;
+      color: black;
+  
+  
+  }
+  img
+  {
+    margin-top: 100px;
+    background-color: #282c34;
+  }
+  .App-header {
+    background-color: #282c34;
+    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: top;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .word
+  {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+    font-size: large;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

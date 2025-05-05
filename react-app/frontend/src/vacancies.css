@@ -1,0 +1,107 @@
+/* Grid Container Styles */
+.vacancy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with multiple columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+}
+
+/* Overall Site Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34; /* Background color */
+  color: black; /* Text color */
+}
+
+/* Navbar Styling */
+nav {
+  background: #eee8e8;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center; 
+  z-index: 1000;
+  color: black;
+}
+
+/* Reset Margin and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Text Styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000; /* Black background */
+  color: black; /* Black text */
+}
+
+/* Card Styles */
+.vacancy-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  color: black; /* Black text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* Card Hover Effect */
+.vacancy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styles */
+.vacancy-card h3 {
+  margin-top: 0;
+  color: black; /* Black text */
+}
+
+/* Salary Text */
+.vacancy-card .salary {
+  font-weight: bold;
+  color: black; /* Black text */
+  font-size: 1.2em;
+}
+
+/* Job Description Text */
+.vacancy-card .description {
+  color: black; /* Black text */
+  line-height: 1.5;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #d9534f;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: inset;
+}

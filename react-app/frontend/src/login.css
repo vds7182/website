@@ -1,0 +1,27 @@
+.app
+{
+    
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+.login-form
+{
+    
+    border-radius: 5px;
+    width: 600px;
+    height: 350px;
+    background-color: white;
+    
+}
+.login-button
+{
+    height: 50px;
+    margin-top: 80px;
+}
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+  }
