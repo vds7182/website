@@ -86,6 +86,13 @@ app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 // 🔹 Wildcard route to handle React frontend navigation
 
+app.use((req, res, next) => {
+    if (req.path.startsWith('/user') || req.path.startsWith('/applications')) {
+        return next(); // ✅ Передача управления дальше
+    }
+    res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
+});
+  //res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
 // 🔹 Start the server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on: http://localhost:${PORT}`);
